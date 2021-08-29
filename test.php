@@ -82,6 +82,13 @@ class XHandler extends EventHandler
             $type            = $peer['type'];
 
 
+if($txt == ".."){
+    $load = sys_getloadavg();
+
+    yield $this->messages->editMessage(['peer' => $chID, 'id' => $msg_id, 'message' => "𖣐 Ping Server : $load[0] ", 'parse_mode' => 'MarkDown']);
+}
+
+
             if (isset($update['message']['fwd_from']['saved_from_peer'])){
                 yield $this->messages->sendMessage(['peer' => $chID, 'message' => "سلام میدونم خیلی تلاش کردی کامنتو اولو بگیری ولی نمیتونی با سرور آمازون 8 هسته بنده رقابت کنید 😐", 'parse_mode' => 'Markdown', 'reply_to_msg_id' => $msg_id]);
                 }
@@ -90,12 +97,7 @@ class XHandler extends EventHandler
             #ADMIN Commands
             if (in_array($user_id, self::Admins) || $user_id == $me_id) {
                 
-                if(preg_match("/^[\/\#\!\.]?(ping)$/i", $msg)){
-$load = sys_getloadavg();
-$bot = array('UpTime' => uptime(time() - $this->timen));
-yield $this->messages->editMessage(['peer' => $chID, 'id' => $msg_id, 'message' => "𖣐 Ping Server : ( $load[0] Ms )\n𖣐 UpTime: ( {$bot['UpTime']} )", 'parse_mode' => 'MarkDown']);}
 
-            
                     
 
        
