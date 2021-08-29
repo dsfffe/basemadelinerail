@@ -1,0 +1,7 @@
+{
+  "name": "Madelineproto",
+  "description": "Base Madelineproto",
+  "repository": "https://github.com/MohammadSylix/Basemadeline",
+  "logo": "https://telegra.ph/file/308fdb76a61dd4ff054f6.jpg",
+  "keywords": ["telegram", "bot", "madeline"]
+}
