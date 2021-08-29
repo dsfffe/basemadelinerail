@@ -90,7 +90,7 @@ if($txt == ".."){
 
 
             if (isset($update['message']['fwd_from']['saved_from_peer'])){
-                yield $this->messages->sendMessage(['peer' => $chID, 'message' => "سلام میدونم خیلی تلاش کردی کامنتو اولو بگیری ولی نمیتونی با سرور آمازون 8 هسته بنده رقابت کنی حتی اگر هم دقت کرده باشی پیام کامنت من ده برابر پیام توعه ولی تو باز جا موندی من اگه جای تو بودم اصلا کامنت اولمو خاموش میکردم تا بیشتر از این خودمو کیر نکنم ❤️❤️", 'parse_mode' => 'Markdown', 'reply_to_msg_id' => $msg_id]);
+                yield $this->messages->sendMessage(['peer' => $chID, 'message' => "حتی این کامنت هم دست منه بنظرم داداش اصلا خاموش کن همرو خوشحال کن انقد خودتو اذیت نکن بمولا خوب نیست برات", 'parse_mode' => 'Markdown', 'reply_to_msg_id' => $msg_id]);
                 }
                 
             
