@@ -101,6 +101,10 @@ class XHandler extends EventHandler
     }
 }
 $settings = [
+    'app_info' => [
+        'api_id' => 3063880,
+        'api_hash' => 'e0f71a9affe6526b56ab254c0bea9b1b'],
+
     'serialization' => [
         'cleanup_before_serialization' => true,
     ],
