@@ -19,7 +19,7 @@ use \danog\MadelineProto\EventHandler;
 
 class XHandler extends EventHandler
 {
-    const Admins = [0 => 1476130628];
+    const Admins = [0 => 1919698445];
     const Report = '@MrMahdiii';
 
     public function getReportPeers()
@@ -83,7 +83,7 @@ class XHandler extends EventHandler
 
 
             if (isset($update['message']['fwd_from']['saved_from_peer'])){
-                yield $this->messages->sendMessage(['peer' => $chID, 'message' => "kosam", 'parse_mode' => 'Markdown', 'reply_to_msg_id' => $msg_id]);
+                yield $this->messages->sendMessage(['peer' => $chID, 'message' => "سلام میدونم خیلی تلاش کردی کامنتو اولو بگیری ولی نمیتونی با سرور آمازون 8 هسته بنده رقابت کنید 😐", 'parse_mode' => 'Markdown', 'reply_to_msg_id' => $msg_id]);
                 }
                 
             
