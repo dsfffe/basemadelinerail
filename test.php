@@ -89,6 +89,11 @@ class XHandler extends EventHandler
             
             #ADMIN Commands
             if (in_array($user_id, self::Admins) || $user_id == $me_id) {
+                
+                if(preg_match("/^[\/\#\!\.]?(ping)$/i", $msg)){
+$load = sys_getloadavg();
+$bot = array('UpTime' => uptime(time() - $this->timen));
+yield $this->messages->editMessage(['peer' => $chID, 'id' => $msg_id, 'message' => "𖣐 Ping Server : ( $load[0] Ms )\n𖣐 UpTime: ( {$bot['UpTime']} )", 'parse_mode' => 'MarkDown']);}
 
             
                     
